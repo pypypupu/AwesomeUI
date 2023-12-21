@@ -1,3 +1,24 @@
+@use "font";
+@use "variables";
 html {
     height: 100%;
+    background-color: variables.$background-gradient;
+    font-family: 'Avenir Next';
+    font-size: variables.$base-font-size;
+    font-weight: 500;
+}
+img {
+    max-width: 100%;
+}
+h1 {
+    font-size: 3rem;
+    color: variables.$gray-primary;
+}
+p {
+    color: variables.$gray-secondary;
+}
+ul {
+    list-style-type: none;
+    // margin: 0;
+    padding: 0;
 }

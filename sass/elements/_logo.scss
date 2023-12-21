@@ -1,0 +1,7 @@
+@use "./../containers/flex";
+.logo {
+    @include flex.flex;
+    @include flex.center;
+    width: fit-content;
+    gap: 12px;
+}

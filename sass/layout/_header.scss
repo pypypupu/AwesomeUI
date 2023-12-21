@@ -1,0 +1,19 @@
+@use "./../responsiveness";
+@use "./../containers/flex";
+header {
+    @include flex.flex;
+    @include flex.around;
+    nav {
+        opacity: 0;
+        display: none;
+    }
+    @include responsiveness.lg {
+        nav {
+            opacity: 1;
+            display: block;
+        }
+        & > button {
+            display: none;
+        }
+    }
+}
