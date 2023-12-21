@@ -7,6 +7,10 @@
     justify-content: center;
     align-items: center;
 }
+@mixin between {
+    justify-content: space-between;
+    align-items: center;
+}
 @mixin around {
     justify-content: space-around;
     align-items: center;

@@ -1,5 +1,6 @@
 @use "font";
 @use "variables";
+@use "containers/flex";
 html {
     height: 100%;
     background-color: variables.$background-gradient;
@@ -7,11 +8,31 @@ html {
     font-size: variables.$base-font-size;
     font-weight: 500;
 }
+body {
+    background: linear-gradient(180deg,rgb(0,0,0,0), rgba(239, 128, 49, 0.055), rgb(0,0,0,0));
+    background-repeat: no-repeat;
+}
 img {
     max-width: 100%;
 }
+h1,h2,h3 {
+    text-transform: uppercase;
+}
 h1 {
     font-size: 3rem;
+    color: variables.$gray-primary;
+}
+h2 {
+    @include flex.flex;
+    
+    flex-direction: column;
+    color: variables.$orange-primary;
+    span {
+        font-size: 2rem;
+        color: variables.$green-primary;
+    }
+}
+h3 {
     color: variables.$gray-primary;
 }
 p {

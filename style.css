@@ -23,12 +23,37 @@ html {
   font-weight: 500;
 }
 
+body {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(239, 128, 49, 0.055), rgba(0, 0, 0, 0));
+  background-repeat: no-repeat;
+}
+
 img {
   max-width: 100%;
 }
 
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
 h1 {
   font-size: 3rem;
+  color: #333333;
+}
+
+h2 {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  flex-direction: column;
+  color: #F3B562;
+}
+h2 span {
+  font-size: 2rem;
+  color: #647B64;
+}
+
+h3 {
   color: #333333;
 }
 
@@ -45,14 +70,14 @@ header {
   display: flex;
   flex-direction: row;
   max-width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 header nav {
   opacity: 0;
   display: none;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
   header nav {
     opacity: 1;
     display: block;
@@ -62,19 +87,32 @@ header nav {
   }
 }
 
+.btn {
+  background: linear-gradient(102deg, #647B64 -4.62%, #66AC66 178.22%);
+  text-align: left;
+  border: none;
+  color: #FEFEFE;
+  gap: 2rem;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .btn-start {
   position: relative;
 }
 .btn-start::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-position: 100%;
-  background-image: url("./../../assets/icons/nav/s-arrow.svg");
-  background-repeat: no-repeat;
+  content: url("./../../assets/icons/nav/s-arrow.svg");
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
 }
 
 .logo {
@@ -86,4 +124,79 @@ header nav {
   width: -moz-fit-content;
   width: fit-content;
   gap: 12px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.hero .hero-txt {
+  width: 75%;
+}
+.hero .hero-img img {
+  position: relative;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0;
+     object-position: 0;
+  right: -40%;
+}
+@media screen and (min-width: 992px) {
+  .hero .hero-img img {
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    right: 0%;
+  }
+  .hero .hero-txt {
+    width: 50%;
+  }
+}
+
+.background {
+  position: absolute;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  justify-items: center;
+}
+.service-cards > div {
+  width: 189px;
+  padding: 2rem;
+  position: relative;
+}
+.service-cards > div:hover {
+  width: 189px;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.103);
+  border-radius: 1rem;
+}
+.service-cards > div > div:first-child {
+  width: -moz-fit-content;
+  width: fit-content;
+  width: 3rem;
+  height: 3rem;
+}
+.service-cards > div > div:first-child > img {
+  height: 100%;
+}
+.service-cards > div > div:first-child:before {
+  content: "a";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.service-cards > div > div:first-child:hover::before {
+  background-color: yellow;
+  z-index: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -1,14 +1,24 @@
+@use "./../variables";
+@use "./../containers/flex";
+.btn {
+    background: variables.$button-gradient;
+    text-align: left;
+    border: none;
+    color: variables.$white-primary;
+    gap:2rem;
+    padding: 1rem 1rem;
+    @include flex.flex;
+    @include flex.between;
+}
 .btn-start {
     position: relative;
     &::after{
-        content: '';
-        position:absolute;
-        right:0;
-        top:0;
-        width: 100%;
-        height: 100%;
-        background-position: 100%;
-        background-image: url("./../../assets/icons/nav/s-arrow.svg");
-        background-repeat: no-repeat;
+        content: url("./../../assets/icons/nav/s-arrow.svg");
+        vertical-align: baseline;
+        display: inline-block;
     }
+}
+.burger-btn {
+    background-color: transparent;
+    border:none;
 }

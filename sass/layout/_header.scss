@@ -2,7 +2,7 @@
 @use "./../containers/flex";
 header {
     @include flex.flex;
-    @include flex.around;
+    @include flex.between;
     nav {
         opacity: 0;
         display: none;
