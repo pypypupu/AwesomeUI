@@ -393,6 +393,21 @@ a:hover {
 }
 .founders .founder-cards {
   margin-left: 2rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-auto-flow: column;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+@media screen and (min-width: 1200px) {
+  .founders .founder-cards {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 .founders .founder-cards .founder {
   background: linear-gradient(358deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%), #FFF;
@@ -436,6 +451,7 @@ a:hover {
   height: 75px;
   padding: 1rem;
   background-color: transparent;
+  cursor: pointer;
 }
 .founders .nav-buttons button:last-child {
   background: linear-gradient(102deg, #647B64 -4.62%, #66AC66 178.22%);

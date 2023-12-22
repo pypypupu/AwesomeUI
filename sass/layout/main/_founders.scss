@@ -12,8 +12,19 @@
     white-space: nowrap;
     overflow: hidden;
     padding: 4rem 0;
+
     & .founder-cards {
         margin-left: 2rem;
+        display: grid;
+        grid-template-rows: 1fr; 
+        grid-auto-flow: column;
+        column-gap: 2rem;
+        @include responsiveness.xl {
+            @include flex.flex;
+            @include flex.around;
+            gap: 2rem;
+        }
+
         & .founder {
             background: variables.$card-gradient-1;
             width: 300px;
@@ -59,7 +70,7 @@
             height: 75px;
             padding: 1rem;
             background-color: transparent;
-
+            cursor: pointer;
             &:last-child {
                 background: variables.$button-gradient;
 
