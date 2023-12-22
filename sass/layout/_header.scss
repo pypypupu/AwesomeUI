@@ -3,6 +3,7 @@
 header {
     @include flex.flex;
     @include flex.between;
+    padding: 4rem;
     nav {
         opacity: 0;
         display: none;
@@ -15,5 +16,9 @@ header {
         & > button {
             display: none;
         }
+    }
+    @include responsiveness.xl {
+        max-width: 1400px;
+        margin: 0 auto;
     }
 }

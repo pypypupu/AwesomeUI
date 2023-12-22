@@ -1,0 +1,52 @@
+@use "./../../containers/flex";
+@use "./../../variables";
+@use "./../../responsiveness";
+
+.connect {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 4rem 0;
+
+    & .connect-wrapper {
+        position: relative;
+        left: -25%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: end;
+        column-gap: 4rem;
+        @include responsiveness.lg {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position:static;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            gap: 4rem;
+        }
+        @include responsiveness.lg {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        & > *:first-child {
+            position: relative;
+            object-fit: cover;
+            
+            & img {
+                height: 100%;
+
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: variables.$background-gradient;
+                right: -2rem;
+                bottom: -3rem;
+                z-index: -1;
+            }
+        }
+    }
+}

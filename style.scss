@@ -1,8 +1,14 @@
 @use "sass/base";
 @use "sass/variables";
 @use "sass/layout/header";
+
 @use "sass/elements/buttons";
 @use "sass/elements/logo";
+@use "sass/elements/heading";
+
 @use "sass/layout/main";
+@use "sass/layout/footer";
+
 @use "sass/containers/background";
-@use "sass/elements/service-card"
+@use "sass/containers/gradient";
+@use "sass/containers/bind"

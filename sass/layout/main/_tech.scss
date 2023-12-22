@@ -1,0 +1,60 @@
+@use "./../../containers/flex";
+@use "./../../variables";
+@use "./../../responsiveness";
+
+.tech {
+    &>h2 {
+        text-align: center;
+    }
+    padding: 4rem 0;
+    padding-left: 2rem;
+    &>div {
+        overflow: hidden;
+        white-space: nowrap;
+
+        @include responsiveness.lg {
+            @include flex.flex;
+            @include flex.around;
+        }
+        @include responsiveness.xl {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-left: 0;
+        }
+        &>* {
+            display: inline-flex;
+            flex-direction: column;
+            
+            justify-content: center;
+            height: 300px;
+            width: 300px;
+            white-space: normal;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.103);
+            padding: 1rem;
+            margin: 1rem;
+            & img {
+                height: 4rem;
+                align-self: flex-start;
+            }
+
+            &:nth-child(2n+2) {
+                background-color: variables.$green-primary;
+
+                & div>h3,
+                div>p {
+                    color: variables.$white-primary;
+                }
+
+                & img {
+                    filter: invert(100%) sepia(66%) saturate(45%) hue-rotate(68deg) brightness(113%) contrast(99%);
+                }
+            }
+
+            &:nth-child(3n+1) {
+                background: variables.$card-gradient-1;
+                
+            }
+        }
+    }
+}

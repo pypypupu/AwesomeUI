@@ -6,12 +6,27 @@
     border: none;
     color: variables.$white-primary;
     gap:2rem;
+    padding: 1em 1em;
+    cursor: pointer;
+    &:hover {
+        color: black;
+
+    }
+}
+a {
+    text-decoration: none;
+    margin: 1.5rem;
+    color: variables.$gray-primary;
+    &:hover {
+        color: variables.$green-primary;
+    }
+}
+.btn-start {
     padding: 1rem 1rem;
     @include flex.flex;
     @include flex.between;
-}
-.btn-start {
     position: relative;
+    width: 270px;
     &::after{
         content: url("./../../assets/icons/nav/s-arrow.svg");
         vertical-align: baseline;
@@ -21,4 +36,5 @@
 .burger-btn {
     background-color: transparent;
     border:none;
+    cursor:pointer;
 }

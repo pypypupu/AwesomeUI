@@ -22,12 +22,12 @@
             <a href="#">Contact Us</a>
             <a href="#">Store</a>
             <a href="#">Use Cases</a>
-            <button>Register</button>
+            <a href="#" class="btn">Register</a>
         </nav>
         <button class="burger-btn"><img src="./assets/icons/nav/menu.svg" alt=""></button>
     </header>
     <main>
-        <section class="hero">
+        <section class="container hero">
             <div class="background">
                 <div class="b-circle"></div>
                 <div class="b-circle"></div>
@@ -47,15 +47,15 @@
         </section>
         <section class="service">
             <div>
-                <div>
-                    <h2>
+                <div class="service-header">
+                    <h2 class="h2 gradient inline">
                         amet consectetur
                         <span>dolor sit.</span>
                     </h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro vitae quam distinctio cupiditate
                         nesciunt placeat a quos iusto!</p>
+                    <button class="btn btn-start">GET STARTED</button>
                 </div>
-                <button class="btn btn-start">GET STARTED</button>
             </div>
             <div class="service-cards">
 
@@ -101,27 +101,27 @@
             </div>
         </section>
         <section class="tech">
-            <h2>nisi earum!
+            <h2 class="h2">nisi earum!
                 <span>similique culpa</span>
             </h2>
             <div>
                 <div>
                     <img src="./assets/icons/tech/python.svg" alt="Python Programming Language Logo">
-                    <div>
+                    <div class="tech-text">
                         <h3>MOT consectet</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
                     </div>
                 </div>
                 <div>
                     <img src="./assets/icons/tech/iost-(iost).svg" alt="Cryptocurrency company Iost logo">
-                    <div>
+                    <div class="tech-text">
                         <h3>MOT consectet</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
                     </div>
                 </div>
                 <div>
                     <img src="./assets/icons/tech/stacks-(stx).svg" alt="Cryptocurrency company Stacks logo">
-                    <div>
+                    <div class="tech-text">
                         <h3>MOT consectet</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae</p>
                     </div>
@@ -129,52 +129,70 @@
             </div>
         </section>
         <section class="connect">
-            <img src="./assets/images/content/meeting.jpg"
-                alt="Formally dressed people having a fun moment at a meeting">
-            <div>
+            <div class="connect-wrapper">
                 <div>
-                    <h2>MOT consectet
-                        <span>amet,consectet</span>
-                    </h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet dignissim
-                        quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris</p>
+                    <img src="./assets/images/content/meeting.jpg"
+                        alt="Formally dressed people having a fun moment at a meeting" height="100%">
                 </div>
-                <button class="btn btn-start">Get Started</button>
+                <div>
+                    <div>
+                        <h2 class="h2">MOT consectet
+                            <span>amet,consectet</span>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet
+                            dignissim
+                            quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum vitae. Et velit sceleris
+                        </p>
+                    </div>
+                    <button class="btn btn-start">Get Started</button>
+                </div>
             </div>
         </section>
         <section class="founders">
-            <div>
-                <h2>MOT consectet
+            <div class="founder-head">
+                <h2 class="h2">MOT consectet
                     <span>amet,consectet Sit quis</span>
                 </h2>
-                <button class="arrow"><img src="./assets/icons/nav/b-arrow.svg" alt="Navigation arrow"></button>
-                <button class="r-arrow active"><img src="./assets/icons/nav/b-arrow.svg"
-                        alt="Navigation arrow"></button>
+                <div class="nav-buttons">
+                    <button class="arrow"><img src="./assets/icons/nav/b-arrow-right.svg"
+                            alt="Navigation arrow"></button>
+                    <button class="r-arrow active"><img src="./assets/icons/nav/b-arrow.svg"
+                            alt="Navigation arrow"></button>
+                </div>
             </div>
-            <div>
+            <div class="founder-cards">
                 <div class="founder">
-                    <div>
-                        <img src="./assets/images/founders/founder1.png" alt="Posing CTO May & Baker">
-                        <div>
-                            <h3>CTO May & Baker<span>Tayo Oshinuwa</span></h3>
-                        </div>
-                    </div>
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
-                </div>
-                <div class="founder">
-                    <div>
-                        <img src="./assets/images/founders/founder2.png" alt="Posing CTO May & Baker">
-                        <div>
-                            <h3>CTO May & Baker<span>Tayo Oshinuwa</span></h3>
-                        </div>
-                    </div>
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
-                </div>
-                <div class="founder">
-                    <div>
+                    <div class="founder-card">
                         <img src="./assets/images/founders/founder3.png" alt="Posing CTO May & Baker">
                         <div>
-                            <h3>CTO May & Baker<span>Tayo Oshinuwa</span></h3>
+                            <h3 class="founder-name">CTO May & Baker<span>Tayo Oshinuwa</span></h3>
+                        </div>
+                    </div>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
+                </div>
+                <div class="founder">
+                    <div class="founder-card">
+                        <img src="./assets/images/founders/founder1.png" alt="Posing CTO May & Baker">
+                        <div>
+                            <h3 class="founder-name">CTO May & Baker<span>Tayo Oshinuwa</span></h3>
+                        </div>
+                    </div>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
+                </div>
+                <div class="founder">
+                    <div class="founder-card">
+                        <img src="./assets/images/founders/founder2.png" alt="Posing CTO May & Baker">
+                        <div>
+                            <h3 class="founder-name">CTO May & Baker<span>Tayo Oshinuwa</span></h3>
+                        </div>
+                    </div>
+                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
+                </div>
+                <div class="founder">
+                    <div class="founder-card">
+                        <img src="./assets/images/founders/founder1.png" alt="Posing CTO May & Baker">
+                        <div>
+                            <h3 class="founder-name">CTO May & Baker<span>Tayo Oshinuwa</span></h3>
                         </div>
                     </div>
                     <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“</p>
@@ -183,45 +201,51 @@
         </section>
     </main>
     <footer>
-        <section class="about">
-            <img src="" alt="Awesome UI logo">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet</p>
-            <p>Copyright © 2023 Robert Dulko.</p>
-            <p>All rights reserved</p>
-            <ul>
-                <li><img src="./assets/icons/socials/twitter.svg" alt="Instagram social link"></li>
-                <li><img src="./assets/icons/socials/dribble.svg" alt="Basketball social media link"></li>
-                <li><img src="./assets/icons/socials/twitter.svg" alt="Twatter social media link"></li>
-                <li><img src="./assets/icons/socials/youtube.svg" alt="Youtube social media link"></li>
-            </ul>
-        </section>
-        <section class="links">
-            <div>
-                <h3>Company</h3>
-                <ul>
-                    <li>Lorem Ipsum 1</li>
-                    <li>Lorem 2</li>
-                    <li>Lorem 3</li>
-                    <li>Lorem 4</li>
-                    <li>Lorem 5</li>
+        <div class="footer-wrapper">
+
+            <section class="about">
+                <div class="logo">
+                    <img src="./assets/icons/logo/1.svg" alt="Awesome UI logo part 1">
+                    <img src="./assets/icons/logo/2.svg" alt="Awesome UI logo part 2">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet</p>
+                <p>Copyright © 2023 Robert Dulko.</p>
+                <p>All rights reserved</p>
+                <ul class="socials">
+                    <li><img src="./assets/icons/socials/instagram.svg" alt="Instagram social link"></li>
+                    <li><img src="./assets/icons/socials/dribble.svg" alt="Basketball social media link"></li>
+                    <li><img src="./assets/icons/socials/twitter.svg" alt="Twatter social media link"></li>
+                    <li><img src="./assets/icons/socials/youtube.svg" alt="Youtube social media link"></li>
                 </ul>
-            </div>
-            <div>
-                <h3>Support</h3>
-                <ul>
-                    <li>Lorem Ipsum 6</li>
-                    <li>Lorem Ipsum 7</li>
-                    <li>Lorem Ipsum 8</li>
-                    <li>Lorem Ipsum 9</li>
-                    <li>Lorem Ipsum 10</li>
-                </ul>
-            </div>
-        </section>
-        <section class="contact">
-            <h3></h3>
-            <textarea name="message" id="txt-msg" cols="30" rows="10" placeholder="Your Email Address"></textarea>
-            <button class="btn btn-start">Send Message</button>
-        </section>
+            </section>
+            <section class="links">
+                <div>
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">Lorem Ipsum 1</a></li>
+                        <li><a href="#">Lorem 2</a></li>
+                        <li><a href="#">Lorem 3</a></li>
+                        <li><a href="#">Lorem 4</a></li>
+                        <li><a href="#">Lorem 5</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Lorem Ipsum 6</a></li>
+                        <li><a href="#">Lorem Ipsum 7</a></li>
+                        <li><a href="#">Lorem Ipsum 8</a></li>
+                        <li><a href="#">Lorem Ipsum 9</a></li>
+                        <li><a href="#">Lorem Ipsum 10</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="contact">
+                <h3>Send Message</h3>
+                <textarea name="message" id="txt-msg" cols="30" rows="10" placeholder="Your Email Address"></textarea>
+                <button class="btn btn-start btn-full">Send Message</button>
+            </section>
+        </div>
     </footer>
 </body>
 

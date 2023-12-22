@@ -9,8 +9,10 @@ html {
     font-weight: 500;
 }
 body {
-    background: linear-gradient(180deg,rgb(0,0,0,0), rgba(239, 128, 49, 0.055), rgb(0,0,0,0));
-    background-repeat: no-repeat;
+    background: radial-gradient(circle, rgba(197, 183, 165, 0.288) 10%, rgba(239, 128, 49, 0.055) 50%, rgba(63,94,251,0) 91%);
+    
+    // background-position: -50%;
+    background-size: 200%;
 }
 img {
     max-width: 100%;
@@ -21,11 +23,13 @@ h1,h2,h3 {
 h1 {
     font-size: 3rem;
     color: variables.$gray-primary;
+    font-weight: normal
 }
 h2 {
     @include flex.flex;
     
     flex-direction: column;
+    flex-wrap: wrap;
     color: variables.$orange-primary;
     span {
         font-size: 2rem;

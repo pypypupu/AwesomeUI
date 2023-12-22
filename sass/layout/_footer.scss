@@ -1,0 +1,82 @@
+@use "./../containers/flex";
+@use "./../variables";
+@use "./../responsiveness";
+
+footer {
+    background-color: #F0DCC5;
+    &>.footer-wrapper {
+        padding: 2rem;
+
+        @include responsiveness.lg {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 2rem;
+            align-items: start;
+        }
+
+        @include responsiveness.xl {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        & .about {
+            & ul {
+                @include flex.flex;
+                gap: 1rem;
+                align-items: center;
+
+                &>li {
+                    cursor: pointer;
+
+                }
+                & img:hover {
+                    filter: brightness(1000%);
+                }
+                &> :first-child img {
+                    background-color: #e2d2bb;
+                    border-radius: 100%;
+                    padding: .5rem
+                }
+
+            }
+        }
+
+        & h3 {
+            font-weight: normal
+        }
+
+        & .links {
+            @include flex.flex;
+            @include flex.between;
+
+            & h3 {
+                margin-top: 0;
+                color: variables.$green-primary;
+            }
+
+            & li {
+                margin: 1rem 0;
+                & a {
+                    margin: 0;
+                }
+            }
+        }
+
+        & .contact {
+            @include flex.flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            & h3 {
+                color: variables.$green-primary;
+                margin-top: 0;
+                margin-bottom: 0;
+                
+            }
+
+            & .btn-full {
+                width: 100%;
+            }
+        }
+    }
+}

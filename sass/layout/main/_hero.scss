@@ -7,7 +7,7 @@
     overflow: hidden;
 
     margin: 0 auto;
-
+    padding: 4rem 0;
     .hero-txt {
         width: 75%;
     }
@@ -21,6 +21,7 @@
     }
 
     @include responsiveness.lg {
+        
         .hero-img img {
             height: auto;
             object-fit: cover;
@@ -31,9 +32,8 @@
             width: 50%;
         }
     }
-
-    // @include responsiveness.xl {
-    //     max-width: 1200px;
-    //     margin: 0 auto;
-    // }
+    @include responsiveness.xl {
+        @include flex.around;
+        max-width: 1400px;
+    }
 }

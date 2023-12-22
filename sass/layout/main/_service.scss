@@ -1,0 +1,80 @@
+@use "./../../containers/flex";
+@use "./../../responsiveness";
+@use "./../../variables";
+
+.service {
+    padding: 4rem 0;
+
+    padding-left: 2rem;
+    overflow: hidden;
+    @include responsiveness.lg {
+        @include flex.flex;
+    }
+
+    @include responsiveness.xl {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    & .service-header {
+        width: 70%;
+
+        &>* {
+            margin: 1.5rem 0;
+        }
+
+        & p {
+            line-height: 132%;
+        }
+    }
+
+    & .service-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+        column-gap: 2rem;
+        justify-items: center;
+
+
+        &>div {
+            width: 189px;
+           
+            position: relative;
+            transition-duration: 500ms;
+            padding: 0;
+            margin: 2rem;
+            border-radius: 1rem;
+            &:hover {
+                padding: 2rem;
+                margin: 0;
+                width: 189px;
+                box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.103);
+                background-color: variables.$white-primary;
+                
+            }
+            
+            
+            &>div:first-child {
+                transition-duration: 500ms;
+                border-radius: 1rem;
+                width: fit-content;
+                width: 3rem;
+                height: 3rem;
+
+                &>img {
+                    height: 100%;
+
+                    box-sizing: border-box;
+                    padding: 0.5rem;
+                    &:hover{
+                        filter: brightness(1000%);
+                    }
+                }
+
+                &:hover {
+                    background-color: variables.$green-primary;
+                }
+            }
+        }
+    }
+}
