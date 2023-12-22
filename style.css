@@ -2,18 +2,18 @@
   font-family: "Avenir Next";
   font-style: normal;
   font-weight: normal;
-  src: local("Avenir Next"), url("/assets/fonts/AvenirNext/AvenirNextLTPro-Regular.otf") format("opentype");
+  src: local("Avenir Next"), url("./../assets/fonts/AvenirNext/AvenirNextLTPro-Regular.otf") format("opentype");
 }
 @font-face {
   font-family: "Avenir Next";
   font-style: italic;
   font-weight: normal;
-  src: local("Avenir Next"), url("/assets/fonts/AvenirNext/AvenirNextLTPro-It.otf") format("opentype");
+  src: local("Avenir Next"), url("./../assets/fonts/AvenirNext/AvenirNextLTPro-It.otf") format("opentype");
 }
 @font-face {
   font-family: "Avenir Next";
   font-weight: bold;
-  src: local("Avenir Next"), url("/assets/fonts/AvenirNext/AvenirNextLTPro-Bold.otf") format("opentype");
+  src: local("Avenir Next"), url("./../assets/fonts/AvenirNext/AvenirNextLTPro-Bold.otf") format("opentype");
 }
 html {
   height: 100%;
