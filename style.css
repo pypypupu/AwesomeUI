@@ -201,21 +201,22 @@ a:hover {
 }
 
 .service {
-  padding: 4rem 0;
-  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
 }
 @media screen and (min-width: 992px) {
-  .service {
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    justify-content: space-around;
-    align-items: center;
+  .service .seperator {
+    padding-left: 2rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .service {
     align-items: center;
+  }
+  .service .seperator {
+    margin-left: calc((100% - 1400px) / 2);
+    padding-left: 0;
   }
 }
 .service .service-header {
@@ -279,6 +280,11 @@ a:hover {
 .tech > h2 {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .tech {
+    padding-left: 0rem;
+  }
+}
 .tech > div {
   overflow: hidden;
   white-space: nowrap;
@@ -294,6 +300,8 @@ a:hover {
 }
 @media screen and (min-width: 1200px) {
   .tech > div {
+    justify-content: space-between;
+    align-items: center;
     max-width: 1400px;
     margin: 0 auto;
     padding-left: 0;
