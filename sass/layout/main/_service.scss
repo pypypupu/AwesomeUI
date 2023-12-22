@@ -5,20 +5,25 @@
 .service {
     padding: 4rem 0;
 
-    padding-left: 2rem;
+    
     overflow: hidden;
     @include responsiveness.lg {
         @include flex.flex;
+        @include flex.around;
+    
+    }
+    @include responsiveness.xl {
+        
+        align-items: center;
+        
     }
 
-    @include responsiveness.xl {
-        max-width: 1400px;
-        margin: 0 auto;
-    }
+    
 
     & .service-header {
         width: 70%;
-
+        position: relative;
+        transform: translate(2rem);
         &>* {
             margin: 1.5rem 0;
         }

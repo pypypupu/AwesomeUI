@@ -202,7 +202,6 @@ a:hover {
 
 .service {
   padding: 4rem 0;
-  padding-left: 2rem;
   overflow: hidden;
 }
 @media screen and (min-width: 992px) {
@@ -210,16 +209,19 @@ a:hover {
     display: flex;
     flex-direction: row;
     max-width: 100%;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .service {
-    max-width: 1400px;
-    margin: 0 auto;
+    align-items: center;
   }
 }
 .service .service-header {
   width: 70%;
+  position: relative;
+  transform: translate(2rem);
 }
 .service .service-header > * {
   margin: 1.5rem 0;
@@ -391,6 +393,12 @@ a:hover {
   align-items: center;
   padding: 2rem;
 }
+@media screen and (min-width: 1200px) {
+  .founders .founder-head {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
 .founders .founder-cards {
   margin-left: 2rem;
   display: grid;
@@ -399,7 +407,7 @@ a:hover {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   .founders .founder-cards {
     display: flex;
     flex-direction: row;
@@ -407,6 +415,8 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 }
 .founders .founder-cards .founder {
@@ -425,6 +435,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   max-width: 100%;
+  flex-wrap: wrap;
   flex-direction: column;
   font-size: 12px;
   font-weight: bold;
@@ -559,10 +570,11 @@ footer > .footer-wrapper .contact .btn-full {
 .gradient::before {
   content: "";
   position: absolute;
-  width: 200%;
+  width: 1000%;
   height: 100%;
   right: -1rem;
   top: -1rem;
+  overflow: visible;
   padding: 1rem 1rem;
   background: linear-gradient(164deg, rgba(239, 128, 49, 0) -335.51%, rgba(239, 128, 49, 0.15) -20.24%, rgba(239, 128, 49, 0) 119.45%);
   z-index: -1;

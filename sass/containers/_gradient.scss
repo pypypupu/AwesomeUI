@@ -10,11 +10,11 @@ $padding-t: 1rem;
 .gradient::before {
     content: '';
     position: absolute;
-    width: 200%;
+    width: 1000%;
     height: 100%;
     right: calc($padding-r * -1);
     top: calc($padding-t * -1);
-    
+    overflow: visible;
     padding: $padding-t $padding-r;
     background: variables.$background-gradient;
     z-index: -1;

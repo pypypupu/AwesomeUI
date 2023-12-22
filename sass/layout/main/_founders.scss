@@ -7,6 +7,10 @@
         @include flex.flex;
         @include flex.between;
         padding: 2rem;
+        @include responsiveness.xl {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
     }
 
     white-space: nowrap;
@@ -19,10 +23,12 @@
         grid-template-rows: 1fr; 
         grid-auto-flow: column;
         column-gap: 2rem;
-        @include responsiveness.xl {
+        @media screen and (min-width: 1600px) {
             @include flex.flex;
             @include flex.around;
             gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
         & .founder {
@@ -37,6 +43,8 @@
 
                 & .founder-name {
                     @include flex.flex;
+                    flex-wrap: wrap;
+                    
                     flex-direction: column;
                     font-size: 12px;
                     font-weight: bold;
